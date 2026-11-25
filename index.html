@@ -19,7 +19,7 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="muted">Lights On, Robots Off (Android game), developed by DobroByte Studio. Effective date: 14 November 2026.</p>
+<p class="muted">Lights On, Robots Off (Android game and web version), developed by DobroByte Studio. Effective date: 25 November 2026.</p>
 
 <p>This policy explains what information the game <strong>Lights On, Robots Off</strong> (the "Game") processes, why, who may receive it, how long it is kept, and how you can control or delete it. DobroByte Studio, an independent developer ("we"), is responsible for the processing described here. Contact: <a href="mailto:dobrobyte.studio@gmail.com">dobrobyte.studio@gmail.com</a>.</p>
 <p>The Game does not require an account and does not ask for your real name, email address, phone number, contacts, camera or microphone access. It does not request Android location permissions and does not collect GPS location (see section 2 about approximate location inferred by advertising services).</p>
@@ -33,6 +33,8 @@
 <p>The arena leaderboard stores your best arena result, your display name, your avatar and the pseudonymous profile linked to the result. <strong>Your display name, avatar and result are visible to other players.</strong> Do not use your real name, contact details or other personal information as a display name. See section 7 for rules and reports.</p>
 <h3>Battle statistics</h3>
 <p>Under the same consent as analytics (section 3), after each finished battle the Game sends a short summary to our backend: the stage and mode, the outcome and duration, kills, the hero, the equipment worn (item, level and quality), the upgrade cards picked together with the cards offered, and the damage dealt by each weapon. It is linked only to the pseudonymous profile identifier, never to your display name, and is used to balance the Game. These summaries are deleted after 180 days.</p>
+<h3>Screen trail</h3>
+<p>Under the same conditions as battle statistics, the Game sends our backend the names of the screens you went through (for example "menu", "battle", "shop") with the number of seconds since the Game started, so that we can see where new players get stuck. It contains fixed screen names only, never text you entered, and is linked only to the pseudonymous profile identifier. These records are deleted after 90 days.</p>
 <h3>Technical server information</h3>
 <p>When the Game contacts our backend, Supabase and its infrastructure may process technical request data (IP address, time, request metadata, security logs) so that we can operate the service, keep it secure, investigate errors and prevent abuse.</p>
 
@@ -52,10 +54,19 @@
 <p>To deliver, restore and protect purchases, the Game sends the purchase receipt to our backend, which checks it with Google Play. Our backend stores: the order number, the product, a cryptographic hash of the purchase token (not the token itself), the pseudonymous profile identifier that received the purchase, the store country, the time, whether it was a test purchase and whether it was refunded. Once a day the backend asks Google Play for refunded or cancelled purchases; the Game then removes the refunded benefit (for example "No Ads" or the remaining days of a card). The purchase amount and currency are also sent to GameAnalytics and Google Analytics for Firebase as analytics events, without the order number.</p>
 <p>These records are processed to provide the purchased content (contract), to prevent fraud and abuse and to keep records of sales (legitimate interests and legal obligations).</p>
 
+<h2>4a. Web version on CrazyGames</h2>
+<p>A web version of the Game is published on CrazyGames (crazygames.com). In the web version:</p>
+<ul>
+<li>there are no Google AdMob ads, no GameAnalytics or Firebase analytics and no in-app purchases;</li>
+<li>your game progress is saved through the CrazyGames SDK data module: in your browser for guests and, if you are signed in to CrazyGames, in your CrazyGames account, under the <a href="https://www.crazygames.com/privacy-policy">CrazyGames privacy policy</a>;</li>
+<li>battle statistics and the screen trail described in section 1 are sent to our backend without a separate prompt, linked only to the pseudonymous profile identifier, on the basis of our legitimate interest in finding and fixing problems in the Game. You can object at any time by writing to us (section 14); we will then delete these records;</li>
+<li>the optional cloud backup with a recovery code works as described in section 1.</li>
+</ul>
 <h2>5. Legal bases (GDPR / UK GDPR)</h2>
 <ul>
 <li>Cloud backup, restore and leaderboard: necessary to provide the features you request, and our legitimate interest in operating them.</li>
 <li>Security and technical logs: our legitimate interests in security, reliability and abuse prevention.</li>
+<li>Battle statistics and screen trail in the web version: our legitimate interest in finding and fixing problems in the Game (section 4a); in the Android game they follow the analytics consent.</li>
 <li>Advertising identifiers, ad-related storage and optional analytics: your consent where consent is required by law.</li>
 <li>Purchases: performing the purchase you made, our legitimate interest in preventing fraud, and legal obligations to keep sales records.</li>
 <li>Support and privacy requests: responding to your request, exercising or defending legal claims, and legal compliance.</li>
